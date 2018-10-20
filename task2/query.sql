@@ -1,0 +1,1 @@
+SELECT author.*, COUNT(*) FROM author JOIN book_author ON book_author.id_author=author.id GROUP BY author.id HAVING COUNT(*) < 7
